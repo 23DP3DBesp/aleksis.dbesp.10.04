@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task List</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <h1>Task List</h1>
+
+  <div class="task-section" id="incomplete-tasks">
+    <h2>Nepabeigti Uzdevumi</h2>
+  </div>
+
+  <div class="task-section" id="completed-tasks">
+    <h2>Pabeigti Uzdevumi</h2>
+  </div>
+
+  <div class="task-section" id="add-task">
+    <h2>Pievienot jaunu uzdevumu</h2>
+    <input type="text" id="task-title" placeholder="Nosaukums" required />
+    <input type="text" id="task-description" placeholder="Apraksts" required />
+    <select id="task-status">
+      <option value="nepabeigts">Nepabeigts</option>
+      <option value="pabeigts">Pabeigts</option>
+    </select>
+    <button id="submit-task">Pievienot</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
