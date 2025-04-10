@@ -18,8 +18,8 @@ mongoose.connect('mongodb+srv://qwelskw:Katya021024@qwelskw.a79nq.mongodb.net/?r
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-.then(() => console.log('✅ Connected to MongoDB'))
-.catch(err => console.error('❌ MongoDB error:', err));
+.then(() => console.log('Connected to MongoDB'))
+.catch(err => console.error('MongoDB error:', err));
 
 // Модель задачи
 const Task = mongoose.model('Task', {
@@ -75,5 +75,5 @@ app.put('/tasks/:id', async (req, res) => {
 
 // Запуск сервера
 app.listen(PORT, () => {
-  console.log(`🚀 Сервер запущен на http://localhost:${PORT}`);
+  console.log(`Server connected http://localhost:${PORT}`);
 });
